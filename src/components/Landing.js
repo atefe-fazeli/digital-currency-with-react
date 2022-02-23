@@ -12,12 +12,16 @@ const Landing = () => {
       }
       fetchAPI();
    }   
-   ,[])      
-          
+   ,[]) 
+     const[search,setSearch]=useState("")     
+     chengeHandler=(event)=>{
+     setSearch(event.target.value)
+     console.log(search)
+     }     
   
     return (
         <div>
-         <input type="text"  placeholder="search..."></input> 
+         <input type="text"  placeholder="search..." onChenge={chengeHandler}></input> 
          <div>
           { coins.map((coin) =><Curency 
           key={coin.id} 
