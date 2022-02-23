@@ -1,15 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { GetCoin } from '../services/Getcoin';
 
 const Landing = () => {
     const [coins,setCoins]=useState([]);
-    const getAPI=()=>{
-     setCoins(GetCoin());
-    }
-    
+   
+   useEffect(()=>{
+      const fetchAPI=async()=>{
+          const data =await GetCoin();
+          setCoins(data);
+      }
+      fetchAPI();
+   }   
+   ,[])      
+          
+  
     return (
         <div>
-            
+         <input type="text"  placeholder="search..."></input> 
+          { coins.map(coin =><p key={coin.id}>{coin.name }</p>)} 
         </div>
     );
 };

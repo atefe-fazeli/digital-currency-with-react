@@ -1,10 +1,10 @@
 import React from 'react';
-import {GetCoin} from './services/Getcoin';
+import Landing from './components/Landing';
+
 function App() {
-  GetCoin();
   return (
     <div >
-  app
+    <Landing />
     </div>
   );
 }
