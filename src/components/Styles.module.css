@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid rgb(91, 186, 199);
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 20px;
+}
+.curency {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 2px solid rgb(91, 186, 199);
+  padding: 0px;
+  margin: 60px;
+}
+
+.container img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.searchinput {
+  justify-content: center;
+  align-items: center;
+}
+.container span {
+  width: calc((100% - 50px) / 5);
+  text-align: center;
+}

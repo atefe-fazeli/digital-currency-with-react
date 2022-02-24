@@ -1,6 +1,0 @@
-.container {
-  display: flex;
-  flex-direction: row;
-  border: solid silver 2px;
-  justify-content: space-between;
-}
