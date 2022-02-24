@@ -26,8 +26,8 @@ const Landing = () => {
   
     return (
        <>
+
          <input className={styles.searchinput} type="text"   placeholder="search..." onChange={changeHandler}></input> 
-        
           { coins.length  ?
           <div className={styles.curency}>
             {
